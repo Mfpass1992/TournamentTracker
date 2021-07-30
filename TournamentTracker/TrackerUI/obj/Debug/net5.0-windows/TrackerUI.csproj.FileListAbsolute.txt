@@ -20,3 +20,14 @@ C:\Users\BBB\Documents\GitHub\TournamentTracker\TournamentTracker\TrackerUI\obj\
 C:\Users\BBB\Documents\GitHub\TournamentTracker\TournamentTracker\TrackerUI\obj\Debug\net5.0-windows\TrackerUI.CreateTeamForm.resources
 C:\Users\BBB\Documents\GitHub\TournamentTracker\TournamentTracker\TrackerUI\obj\Debug\net5.0-windows\TrackerUI.CreateTournamentForm.resources
 C:\Users\BBB\Documents\GitHub\TournamentTracker\TournamentTracker\TrackerUI\obj\Debug\net5.0-windows\TrackerUI.TournamentDashboardForm.resources
+C:\Users\BBB\Documents\GitHub\TournamentTracker\TournamentTracker\TrackerUI\bin\Debug\net5.0-windows\TrackerLibrary.dll
+C:\Users\BBB\Documents\GitHub\TournamentTracker\TournamentTracker\TrackerUI\bin\Debug\net5.0-windows\TrackerLibrary.pdb
+C:\Users\BBB\Documents\GitHub\TournamentTracker\TournamentTracker\TrackerUI\obj\Debug\net5.0-windows\TrackerUI.csproj.CopyComplete
+C:\Users\BBB\Documents\GitHub\TournamentTracker\TournamentTracker\TrackerUI\bin\Debug\net5.0-windows\TrackerUI.dll.config
+C:\Users\BBB\Documents\GitHub\TournamentTracker\TournamentTracker\TrackerUI\bin\Debug\net5.0-windows\Dapper.dll
+C:\Users\BBB\Documents\GitHub\TournamentTracker\TournamentTracker\TrackerUI\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\BBB\Documents\GitHub\TournamentTracker\TournamentTracker\TrackerUI\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\BBB\Documents\GitHub\TournamentTracker\TournamentTracker\TrackerUI\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\BBB\Documents\GitHub\TournamentTracker\TournamentTracker\TrackerUI\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\BBB\Documents\GitHub\TournamentTracker\TournamentTracker\TrackerUI\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\BBB\Documents\GitHub\TournamentTracker\TournamentTracker\TrackerUI\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
