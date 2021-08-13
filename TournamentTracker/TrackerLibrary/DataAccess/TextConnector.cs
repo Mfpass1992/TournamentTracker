@@ -13,7 +13,9 @@ namespace TrackerLibrary.DataAccess
         private const string PrizesFile = "PrizeModels.csv";
         private const string PeopleFile = "PeopleModels.csv";
         private const string TeamFile = "TeamModels.csv";
-
+        private const string TournamentFile = "TournamentModels.csv";
+        private const string MatchupFile = "MatchupModels.csv";
+        private const string MatchuEntryFile = "MatchuEntryModels.csv";
         public PersonModel CreatePerson(PersonModel model)
         {
             List<PersonModel> people = PeopleFile.FullFilePath().loadFile().convertToPersonModels();
@@ -28,7 +30,7 @@ namespace TrackerLibrary.DataAccess
 
             people.Add(model);
 
-            people.saveToPeopleFile(PeopleFile);
+            people.SaveToPeopleFile(PeopleFile);
 
             return model;
         }
@@ -47,7 +49,7 @@ namespace TrackerLibrary.DataAccess
 
             prizes.Add(model);
 
-            prizes.saveToPrizeFile(PrizesFile);
+            prizes.SaveToPrizeFile(PrizesFile);
 
             return model;
         }
@@ -72,9 +74,37 @@ namespace TrackerLibrary.DataAccess
             return model;
         }
 
-        public List<PersonModel> GetPersonAll()
+        public void CreateTournament(TournamentModel model)
+        {
+            List<TournamentModel> tournaments = TournamentFile
+                .FullFilePath()
+                .loadFile()
+                .ConvertToTournamentModels(PeopleFile ,TeamFile, PrizesFile);
+
+            int currentId = 1;
+
+            if(tournaments.Count > 0)
+            {
+                currentId = tournaments.OrderByDescending(x => x.Id).First().Id + 1;
+            }
+
+            model.Id = currentId;
+
+            model.SaveRoundsToFile(MatchupFile, MatchuEntryFile);
+
+            tournaments.Add(model);
+
+            tournaments.SaveToTournamentsFile(TournamentFile);
+        }
+
+        public List<PersonModel> GetPerson_All()
         {
             return PeopleFile.FullFilePath().loadFile().convertToPersonModels();
+        }
+
+        public List<TeamModel> GetTeam_All()
+        {
+            return TeamFile.FullFilePath().loadFile().ConvertToTeamModels(PeopleFile);
         }
     }
 }
